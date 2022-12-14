@@ -1,0 +1,45 @@
+
+
+
+
+/* Nav bar*/
+nav{
+    size: 100px;
+    background-color: gray;
+    text-align-all: center;
+    font-size: 36px;
+    font-palette: dark;
+    font-family: Georgia, "Times New Roman", Times, serif ;
+}
+
+body{
+    background-color: burlywood !important;
+}
+.nav-link:hover {
+color: red !important;
+}
+
+label{
+    font-family: Georgia, "Times New Roman", Times, serif ;
+}
+
+/* nav bar button*/
+.button1{
+    background-color: darkgray;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-size: 16px;
+}
+
+.button1:hover{
+    color: red !important;
+}
+
+.btn-lg:hover{
+    color: red !important;
+}
