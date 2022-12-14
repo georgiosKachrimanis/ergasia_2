@@ -4,7 +4,7 @@
 
 /* Nav bar*/
 nav{
-    size: 100px;
+
     background-color: gray;
     text-align-all: center;
     font-size: 36px;
@@ -13,10 +13,16 @@ nav{
 }
 
 body{
-    background-color: burlywood !important;
+    background-color: gainsboro !important;
 }
 .nav-link:hover {
 color: red !important;
+}
+
+/* Navigation bar links*/
+.nav-link{
+    font-family: Georgia, "Times New Roman", Times, serif ; ;
+    color: midnightblue !important;
 }
 
 label{
@@ -25,10 +31,8 @@ label{
 
 /* nav bar button*/
 .button1{
-
-    background-color: lightblue;
+    background-color: lightgray;
     border: cadetblue;
-    border-radius: 50%;
     color: midnightblue;
     padding: 15px 25px;
     text-align: center;
