@@ -4,12 +4,15 @@
 
 /* Nav bar*/
 nav{
-
     background-color: gray;
     text-align-all: center;
     font-size: 36px;
     font-palette: dark;
     font-family: Georgia, "Times New Roman", Times, serif ;
+}
+.active{
+    font-size: 38px !important;
+    text-decoration: underline !important;
 }
 
 body{
