@@ -1,7 +1,5 @@
 
 /* Nav bar*/
-
-
 nav {
     background-color: gray;
     text-align-all: center;
@@ -87,3 +85,4 @@ color: whitesmoke !important;
     transition: all 0.3s ease 0s;
     border: 2px solid;
 }
+
