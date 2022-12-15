@@ -1,25 +1,29 @@
 
-
-
-
 /* Nav bar*/
-nav{
+
+
+nav {
     background-color: gray;
     text-align-all: center;
     font-size: 36px;
     font-palette: dark;
-    font-family: Georgia, "Times New Roman", Times, serif ;
 }
 .active{
     font-size: 38px !important;
     text-decoration: underline !important;
 }
 
-body{
-    background-color: gainsboro !important;
+/*Font*/
+*{
+    font-family: Algerian, "Times New Roman", Times, serif ;
 }
+
+body{
+    background-color: aliceblue !important;
+}
+
 .nav-link:hover {
-color: red !important;
+color: whitesmoke !important;
 }
 
 /* Navigation bar links*/
@@ -28,27 +32,58 @@ color: red !important;
     color: midnightblue !important;
 }
 
-label{
-    font-family: Georgia, "Times New Roman", Times, serif ;
+.form-group{
+    font-size: 45px !important;
 }
 
-/* nav bar button*/
 .button1{
-    background-color: lightgray;
+    font-size: 26px;
+    background: transparent;
     border: cadetblue;
     color: midnightblue;
     padding: 15px 25px;
     text-align: center;
     text-decoration: none;
     display: inline;
-    font-family: Georgia, "Times New Roman", Times, serif ;
-    font-size: 28px;
+    border-radius: 70px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    transition: all 0.3s ease 0s;
+    border: 2px solid;
 }
 
-.button1:hover{
-    color: red !important;
+.button2{
+    color: black;
 }
+
+.button1:hover {
+    color: whitesmoke !important;
+    background: dimgray;
+    border: 2px solid whitesmoke;
+}
+
 
 .btn-lg:hover{
-    color: red !important;
+    color: whitesmoke !important;
+}
+
+.password{
+    border:black;
+    background-color: gray !important;
+}
+
+.custom-select{
+    font-size: 18px;
+    background: transparent;
+    border: black;
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    border-radius: 10%;
+    letter-spacing: 1px;
+    line-height: 30px;
+    transition: all 0.3s ease 0s;
+    border: 2px solid;
 }
