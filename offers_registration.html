@@ -42,6 +42,110 @@
     <div class="container-lg text-center" id="offer_registration_title">
         <h1>Καταχώρηση Προσφοράς</h1>
     </div>
+
+    <!--Company Name-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-6">
+                    <span class="input-group-text" id="company_name">Επωνυμία Επιχειρήσεως</span>
+                    <input type="text" class="form-control" aria-label="company_name" aria-describedby="basic-addon1">*
+            </div>
+        </div>
+    </div>
+
+    <!--Tax ID number-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-6" >
+                <span class="input-group-text" id="tax_id">Α.Φ.Μ</span>
+                <input type="text" class="form-control" aria-label="tax_id" aria-describedby="basic-addon1">*
+            </div>
+        </div>
+    </div>
+
+    <!--Address-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-6">
+                <span class="input-group-text" id="address">Διεύθυνση</span>
+                <input type="text" class="form-control" aria-label="address" aria-describedby="basic-addon1">*
+            </div>
+        </div>
+    </div>
+
+    <!--Municipality-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-6">
+                <label class="input-group-text" for="input_municipality">Δήμος</label>
+                <select class="form-select" id="input_municipality">
+                    <option selected>Επιλογή Δήμου</option>
+                    <option value="1">Αθηναίων</option>
+                    <option value="2">Κορίνθου</option>
+                    <option value="3">Ζαχάρως</option>
+                </select>*
+            </div>
+        </div>
+    </div>
+
+    <!--Region-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-6">
+                <label class="input-group-text" for="input_region">Περιφέρεια</label>
+                <select class="form-select" id="input_region">
+                    <option selected>Επιλογή Περιφεριακής Διοικησής</option>
+                    <option value="1">Αττικής</option>
+                    <option value="2">Κορινθίας</option>
+                    <option value="3">Ηλείας</option>
+                </select>*
+            </div>
+        </div>
+    </div>
+
+    <!--Fuel type-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <div class="input-group mb-6">
+                <label class="input-group-text" for="fuel_type">Τύπος Καυσίμου</label>
+                <select class="form-select" id="fuel_type">
+                    <option selected>Επιλογή Τύπου Καυσίμου</option>
+                    <option value="1">Βενζίνη απλή</option>
+                    <option value="2">Βενζίνη Ενισχυμένη</option>
+                    <option value="3">Πετρέλαιο Κίνησεως Απλό</option>
+                    <option value="4">Πετρέλαιο Κινήσεως Ενισχυμένο</option>
+                    <option value="5">Πετρέλαιο Θέρμανσης</option>
+                    <option value="6">Φυσικό Άεριο</option>
+                </select>*
+            </div>
+        </div>
+    </div>
+
+    <!--Price-->
+    <div class="row">
+        <div class="col-4">
+        </div>
+        <div class="col-5">
+            <label class="input-group mb-6">
+                <span class="input-group-text" id="price">Τιμή</span>
+                <input type="number" required name="price" min="0" value="0.00" step=".01">
+                    *
+            </label>
+        </div>
+    </div>
+
 </main>
 
 <footer>
