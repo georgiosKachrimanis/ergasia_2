@@ -8,10 +8,20 @@ nav {
     height: 5rem;
 }
 
-#logo {
-    max-width: 15px !important;
-    max-height: 10% !important;
+.registered_offers {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    font-size: x-large;
 }
+
+#loginEmail, #passWord{
+    font-size: small;
+}
+
+#offer_registration_title{
+    padding: 4%;
+}
+
 .active{
     font-size: 38px !important;
     text-decoration: underline !important;
@@ -91,5 +101,9 @@ color: whitesmoke !important;
     line-height: 30px;
     transition: all 0.3s ease 0s;
     border: 2px solid;
+}
+
+.footer {
+    background-color: rgba(0,0,0,0.2) !important;
 }
 
