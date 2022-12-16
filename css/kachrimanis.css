@@ -1,10 +1,16 @@
 
 /* Nav bar*/
 nav {
-    background-color: gray;
+    background-color: rgba(0,0,0,0.2);
     text-align-all: center;
     font-size: 36px;
     font-palette: dark;
+    height: 5rem;
+}
+
+#logo {
+    max-width: 15px !important;
+    max-height: 10% !important;
 }
 .active{
     font-size: 38px !important;
@@ -16,20 +22,24 @@ nav {
     font-family: Algerian, "Times New Roman", Times, serif ;
 }
 
+/*Background Color*/
 body{
     background-color: aliceblue !important;
 }
 
+/*Hover over the nav-links*/
 .nav-link:hover {
 color: whitesmoke !important;
 }
 
 /* Navigation bar links*/
 .nav-link{
-    font-family: Georgia, "Times New Roman", Times, serif ; ;
+  /*  font-family: Georgia, "Times New Roman", Times, serif ; ;*/
     color: midnightblue !important;
+    padding: 1%;
 }
 
+/**/
 .form-group{
     font-size: 45px !important;
 }
@@ -50,9 +60,6 @@ color: whitesmoke !important;
     border: 2px solid;
 }
 
-.button2{
-    color: black;
-}
 
 .button1:hover {
     color: whitesmoke !important;
