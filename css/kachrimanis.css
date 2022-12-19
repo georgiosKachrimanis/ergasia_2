@@ -5,8 +5,12 @@ nav {
     text-align-all: center;
     font-size: 36px;
     font-palette: dark;
-    height: 5rem;
+    height: 10%;
 }
+
+main{height: 80%}
+
+footer{height: 10%}
 
 a{
     text-decoration: none;
