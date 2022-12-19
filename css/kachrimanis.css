@@ -8,18 +8,21 @@ nav {
     height: 5rem;
 }
 
+a{
+    text-decoration: none;
+}
+
 .registered_offers {
-    margin-top: 15%;
-    margin-bottom: 15%;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 #loginEmail, #passWord{
     font-size: small;
 }
 
-#offer_registration_title{
-    padding: 4%;
+#title{
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
 .active{
@@ -105,7 +108,11 @@ color: whitesmoke !important;
 
 .footer {
     background-color: rgba(0,0,0,0.2) !important;
+
 }
 
+#log_on{
+    font-size: small;
+}
 
 

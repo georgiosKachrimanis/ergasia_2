@@ -9,7 +9,8 @@
 
 </head>
 <body>
-<header class="container-fluid flex-wrap text-center">
+<!--header-->
+<header class="container-fluid flex-wrap text-center fixed-top">
 
     <nav class="nav justify-content-center flex-wrap" aria-label="Main Navigation">
         <div class="row">
@@ -38,10 +39,15 @@
     </nav>
 
 </header>
+
+<!--main-->
 <main>
-    <div class="container-lg text-center" id="offer_registration_title">
+
+    <div class="container-lg text-center" id="title">
         <h1>Καταχώρηση Προσφοράς</h1>
     </div>
+
+    <form action="success_page.html" method="get">
 
     <!--Company Name-->
     <div class="row">
@@ -62,7 +68,7 @@
         <div class="col-4">
             <div class="input-group mb-6" >
                 <span class="input-group-text" id="tax_id">Α.Φ.Μ</span>
-                <input type="text" class="form-control" aria-label="tax_id" aria-describedby="basic-addon1" required minlength="9" maxlength="9">*
+                <input type="number" class="form-control" aria-label="tax_id" aria-describedby="basic-addon1" required minlength="9" maxlength="9">*
             </div>
         </div>
     </div>
@@ -160,15 +166,23 @@
         <div class="col-2"><i>* όλα τα πεδία με αστερίσκο είναι υποχρεωτικά</i></div>
     </div>
 
+    <!--Accept and clear buttons-->
+    <div class="col-md-6 p-lg-6 mx-auto my-5 text-center">
+        <button type="submit" class="btn-lg btn-secondary">Αποστολή</button>
+        <button type="reset" class="btn-lg btn-secondary">Καθαρισμός</button>
+    </div>
+
+    </form>
+
 </main>
 
 <footer>
-    <!--Links-->
+    <!--Privacy and policy Links-->
     <!-- Copyright -->
     <div class="container-fluid flex-wrap text-lg-center fixed-bottom">
         <div class="footer">
-            <a class="nav-link" href=documents/oroi-xr.pdf> Όροι χρήσης</a>
-            <a class="nav-link" href="documents/GDPRTPL_policy_data_privacy_GR.pdf">Πολιτική Απορρήτου</a>
+            <a class="nav-link" href="terms_of_use.html"> Όροι χρήσης</a>
+            <a class="nav-link" href="policy.html">Πολιτική Απορρήτου</a>
             <a class="text-reset fw-bold" href="index.html">TrabakoulGas.com</a>
             © 2022 Copyright:
         </div>
