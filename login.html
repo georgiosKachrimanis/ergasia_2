@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<header class="container-fluid flex-wrap text-center">
+<header>
 
     <nav class="nav justify-content-center flex-wrap" >
         <div class="row">
@@ -45,24 +45,41 @@
 
 <main>
 
-
+    <!--Title-->
     <div class="container-lg text-center" id="title">
         <h1>Καλώς ήρθατε στην TrabakoulGas</h1>
     </div>
 
-    <form action="offers_registration.html" name="offers" class="registered_offers" method="get">
+    <!--Form-->
+    <form action="offers_registration.html" name="offers" class="registered_offers" method="post">
 
-        <div class="d-flex justify-content-md-evenly">
-            <label for="loginEmail" >Όνομα &nbsp;&nbsp;&nbsp;Χρήστη:</label>
-            <input type="email" id="loginEmail" name="email" required placeholder="Username(e-mail)">
+        <!--User Name input-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="input-group mb-6">
+                    <span class="input-group-text" id="user_name">Όνομα Χρήστη:</span>
+                    <input type="email" class="form-control" aria-label="company_name"
+                           aria-describedby="basic-addon1" required placeholder="Username(e-mail)" name="user">
+                </div>
+            </div>
+            <div class="col"></div>
         </div>
 
-        <div class="d-flex justify-content-md-evenly">
-            <label for="passWord" >Κωδικός Χρήστη:</label>
-            <input type="password" id="passWord" name="password" minlength="8" maxlength="20" required
-                   placeholder="password(8-20 char.)">
+        <!--User Password Input-->
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <div class="input-group mb-6">
+                    <span class="input-group-text" id="tax_id">Κωδικός Χρήστη:</span>
+                    <input type="password" id="user_password" class="form-control" aria-label="user_password" aria-describedby="basic-addon1" required
+                           minlength="8" maxlength="20" placeholder="password(8-20 char.)" name="password">
+                </div>
+            </div>
+            <div class="col"></div>
         </div>
 
+        <!--Accept button and log on option-->
         <div class="col-md-6 p-lg-6 mx-auto my-5 text-center">
             <button type="submit" class="btn-lg btn-secondary">Είσοδος</button>
             <a class="nav-link" id="log_on" href="registration.html" >Εγγραφή νέας επιχείρησης</a>
@@ -75,12 +92,16 @@
 <footer>
     <!--Privacy and policy Links-->
     <!-- Copyright -->
-    <div class="container-fluid flex-wrap text-lg-center fixed-bottom">
-        <div class="footer">
-            <a class="nav-link" href="terms_of_use.html"> Όροι χρήσης</a>
-            <a class="nav-link" href="policy.html">Πολιτική Απορρήτου</a>
-            <a class="text-reset fw-bold" href="index.html">TrabakoulGas.com</a>
-            © 2022 Copyright:
+    <div class="container-fluid  text-lg-center">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <a class="nav-link" href="terms_of_use.html"> Όροι χρήσης</a>
+                <a class="nav-link" href="policy.html">Πολιτική Απορρήτου</a>
+                <a class="text-reset fw-bold" href="index.html">TrabakoulGas.com</a>
+                © 2022 Copyright:
+            </div>
+            <div class="col"></div>
         </div>
     </div>
 </footer>

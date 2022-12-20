@@ -6,11 +6,25 @@ nav {
     font-size: 36px;
     font-palette: dark;
     height: 10%;
+    width: 100%;
 }
 
-main{height: 80%}
+header{
+    width: available;
+    height: 10%;
+    top: 0;
+}
 
-footer{height: 10%}
+
+footer{
+    position: absolute;
+    background-color: rgba(0,0,0,0.2);
+    width: 100%;
+    height: 10%;
+    bottom: 0;
+    margin-top: 10%;
+}
+
 
 a{
     text-decoration: none;
@@ -24,9 +38,14 @@ a{
     font-size: small;
 }
 
+/*Page title*/
 #title{
-    padding-top: 10%;
+    padding-top: 5%;
     padding-bottom: 5%;
+}
+
+#results {
+    padding-top: 5%;
 }
 
 .active{
@@ -39,9 +58,14 @@ a{
     font-family: Algerian, "Times New Roman", Times, serif ;
 }
 
+/*Search button in the offers_search page*/
+#search{
+    padding-top: 2%;
+}
 /*Background Color*/
 body{
     background-color: aliceblue !important;
+    width: 100%;
 }
 
 /*Hover over the nav-links*/
@@ -117,6 +141,10 @@ color: whitesmoke !important;
 
 #log_on{
     font-size: small;
+}
+
+fieldset{
+    border: dimgray;
 }
 
 

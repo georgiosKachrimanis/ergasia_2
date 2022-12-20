@@ -8,14 +8,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
-<body class="container-fluid flex-wrap text-center">
+<body>
 <!-- Header -->
-<header class="container-fluid flex-wrap">
+<header>
 
     <nav class="nav justify-content-center flex-wrap" aria-label="Main Navigation">
         <div class="row">
             <div class="col">
-                <a  href=index.html aria-label="TrabakoulGas"><img
+                <a href=index.html aria-label="TrabakoulGas"><img
                         src="img/logo.png" style="width:auto; height: 5rem" alt="Company Image"></a>
             </div>
             <div class="col">
@@ -43,63 +43,65 @@
 <!-- Main -->
 <main>
 
-    <!--Drop Down menu list 5 columns. Columns 1, 3 are for dropdown label. 2, 4 forms and 5 is the button.-->
+
     <div class="container-fluid flex-wrap text-center" style="padding-top: 5%">
         <div class="row">
             <h1>Φίλτρα</h1>
         </div>
     </div>
 
-    <form method="get"><!--Πρέπει να το βάζω να κάνει ένα εικονικό ψάξιμο-->
+    <!--Search-->
+    <form action="/sendData" method="get">
         <div class="container-fluid flex-wrap text-center">
-            <div class="row align-items-start">
+            <div class="row">
                 <!--Col0 label 1-->
-                <div class="col">
-                    <h2>Περιφέρεια:</h2>
-                </div>
+                <div class="col-4"></div>
                 <!--Col1 dropdown 1-->
-                <div class="col">
-                    <label for="perifereia">
-                        <select class="custom-select custom-select-md" id="perifereia" name="perifereia">
-                            <option>-------</option>
-                            <option>Αττικής</option>
-                            <option>Κορινθίας</option>
-                            <option>Βοιωτίας</option>
-                        </select>
-                    </label>
+                <div class="col-2">
+                    <div class="input-group mb-6">
+                        <label class="input-group-text" for="input_region">Περιφέρεια</label>
+                        <select class="form-select" id="input_region" name="region" required>
+                            <option selected></option>
+                            <option value="1">Αττικής</option>
+                            <option value="2">Κορινθίας</option>
+                            <option value="3">Ηλείας</option>
+                        </select>*
+                    </div>
                 </div>
-                <!--Col2 label 2-->
-                <div class="col">
-                    <h2>Δήμος:</h2>
+
+                <div class="col-2">
+                    <div class="input-group mb-6">
+                        <label class="input-group-text" for="municipality">Δήμος</label>
+                        <select class="form-select" id="municipality" name="municipality" required>
+                            <option selected></option>
+                            <option value="1">Αθηναίων</option>
+                            <option value="2">Κορίνθου</option>
+                            <option value="3">Ζαχάρως</option>
+                        </select>*
+                    </div>
                 </div>
-                <!--Col3 dropdown 2-->
-                <div class="col">
-                    <label for="dimos">
-                        <select class="custom-select custom-select-md" id="dimos" name="dimos">
-                            <option>-------</option>
-                            <option>Αθηναίων</option>
-                            <option>Αμαρουσίου</option>
-                            <option>Θηβαίων</option>
-                            <option>Κορίνθου</option>
-                            <option>Λουτρακίου</option>
-                        </select>
-                    </label>
-                </div>
-                <!--Col4 Button-->
-                <div class="col">
-                    <button type=submit class="button1 " style="color: black">Αναζήτηση</button>
-                </div>
+
+                <div class="col"></div>
+            </div>
+
+            <!--Search Button-->
+            <div class="row" id="search">
+
+            <div class="col-md-6 p-lg-6 mx-auto my-5 text-center">
+                <button type="submit" class="btn-lg btn-secondary" >Αναζήτηση</button>
+                <button type="reset" class="btn-lg btn-secondary">Καθαρισμός</button>
+            </div>
             </div>
         </div>
 
     </form>
 
-    <div class="row" style="padding-top: 8%">
-        <h1>Αποτελέσματα</h1>
-    </div>
     <!--Results table-->
-    <div class="container-fluid flex-wrap text-center" style="padding-top: 1%">
+    <div class="container-fluid flex-wrap text-center" id="results">
 
+        <div class="row">
+            <h1>Αποτελέσματα</h1>
+        </div>
         <table class="table">
             <thead class="thead-dark">
             <tr>
@@ -155,12 +157,16 @@
 <footer>
     <!--Privacy and policy Links-->
     <!-- Copyright -->
-    <div class="container-fluid flex-wrap text-lg-center fixed-bottom">
-        <div class="footer">
-            <a class="nav-link" href="terms_of_use.html"> Όροι χρήσης</a>
-            <a class="nav-link" href="policy.html">Πολιτική Απορρήτου</a>
-            <a class="text-reset fw-bold" href="index.html">TrabakoulGas.com</a>
-            © 2022 Copyright:
+    <div class="container-fluid  text-lg-center">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <a class="nav-link" href="terms_of_use.html"> Όροι χρήσης</a>
+                <a class="nav-link" href="policy.html">Πολιτική Απορρήτου</a>
+                <a class="text-reset fw-bold" href="index.html">TrabakoulGas.com</a>
+                © 2022 Copyright:
+            </div>
+            <div class="col"></div>
         </div>
     </div>
 </footer>
